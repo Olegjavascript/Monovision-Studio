@@ -1,0 +1,230 @@
+@media screen and (max-width: 1440px) {
+  .keywords {
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .about__text {
+    font-size: 35px;
+  }
+  .services {
+    margin-top: 60px;
+  }
+  .works {
+    padding-top: 50px;
+  }
+  .works__grid {
+    gap: 30px 20px;
+  }
+  .inspiration {
+    padding-top: 50px;
+  }
+  .inspiration__grid {
+    margin-top: 40px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 30px 20px;
+  }
+  .inspiration__img-tenement {
+    grid-row: 2 / 4;
+    grid-column: 2/3;
+  }
+  .inspiration__img-sky {
+    grid-column: 1/3;
+  }
+  .customers {
+    padding: 50px 0;
+  }
+  .customers__partners {
+    gap: 20px;
+    margin-top: 40px;
+  }
+  .customers__partners {
+    img {
+      width: calc((100% - 60px) / 4);
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .footer {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    --container-padding-inline: 6%;
+    --footer-padding-inline: 6%;
+  }
+  .promo__title {
+    font-size: 48px;
+  }
+  .promo__subtitle {
+    margin-top: 80px;
+  }
+
+  .promo__address {
+    margin-top: 80px;
+    &::before {
+      position: absolute;
+      left: -30px;
+      top: -6px;
+      width: 30px;
+      height: 37px;
+    }
+  }
+  .keywords {
+    padding: 0 15px;
+    li {
+      display: none;
+    }
+    li:nth-child(-n + 9) {
+      display: list-item;
+    }
+  }
+  .promo {
+    background-image: url("../img/main_bg_tablet.jpg");
+  }
+  .services {
+    flex-direction: column;
+    row-gap: 40px;
+    margin-top: 40px;
+  }
+  .services__items {
+    width: 100%;
+  }
+  .services__items li {
+    &:first-child::before,
+    &:nth-child(3)::before {
+      left: -25px;
+    }
+  }
+  .services__text {
+    width: 100%;
+  }
+  .about__text {
+    font-size: 24px;
+  }
+
+  .title {
+    font-size: 36px;
+  }
+  .footer {
+    flex-direction: column;
+    align-items: start;
+    row-gap: 30px;
+    padding: 30px var(--footer-padding-inline) 40px var(--footer-padding-inline);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  :root {
+    --container-padding-inline: 15px;
+    --footer-padding-inline: 15px;
+  }
+  .promo {
+    padding-top: 50px;
+    min-height: 500px;
+  }
+  .promo__title {
+    font-size: 26px;
+  }
+  .promo__subtitle {
+    margin-top: 30px;
+    font-size: 16px;
+  }
+  .btn {
+    width: 120px;
+    min-height: 30px;
+    font-size: 14px;
+  }
+  .promo__address {
+    margin-top: 233px;
+    &::before {
+      display: none;
+    }
+  }
+  .keywords {
+    margin-top: 10px;
+    li:nth-last-child(-n + 11) {
+      display: none;
+    }
+  }
+  .about {
+    padding-top: 50px;
+  }
+  .about__text {
+    font-size: 16px;
+  }
+  .services {
+    gap: 20px;
+    margin-top: 20px;
+  }
+  .services__item-subtitle {
+    font-size: 12px;
+  }
+  .services__items li {
+    margin-top: 5px;
+    font-size: 14px;
+    &:first-child::before,
+    &:nth-child(3)::before {
+      display: none;
+    }
+  }
+  .services__text {
+    font-size: 15px;
+  }
+  .works__grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr) 1.5fr;
+    column-gap: 0;
+    margin-top: 40px;
+  }
+  .inspiration__grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr) 2fr 1fr 0.5fr;
+    gap: 30px 20px;
+  }
+  .inspiration__img-tenement {
+    grid-row: auto;
+    grid-column: auto;
+  }
+  .inspiration__img-sky {
+    grid-column: auto;
+  }
+  .customers__partners {
+    justify-content: space-between;
+    gap: 20px 36px;
+    margin-top: 30px;
+  }
+  .customers__partners {
+    img {
+      width: calc((100% - 36px) / 2);
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .services__text {
+    font-size: 12px;
+  }
+  .footer {
+    align-items: center;
+  }
+  .footer__contacts {
+    order: 3;
+  }
+  .footer__tel {
+    order: 2;
+  }
+}
+/* Для горизонтальной версии смартфонов */
+@media (height < 500px) {
+  .promo__subtitle {
+    margin-top: 20px;
+  }
+  .promo__address {
+    margin-top: 30px;
+  }
+}
