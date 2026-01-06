@@ -221,6 +221,9 @@
 }
 /* Для горизонтальной версии смартфонов */
 @media (height < 500px) {
+  .promo {
+    padding-top: 20px;
+  }
   .promo__subtitle {
     margin-top: 20px;
   }
